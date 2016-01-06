@@ -1,0 +1,27 @@
+{
+  "name": "angular-todo-app",
+  "authors": [
+    "inzamam malik <malikasinger1@github.com>"
+  ],
+  "description": "this is an angular todo app just for polishing myself",
+  "main": "index.html",
+  "moduleType": [],
+  "keywords": [
+    "angular",
+    "todo",
+    "single",
+    "page",
+    "spa",
+    "material",
+    "design"
+  ],
+  "license": "MIT",
+  "homepage": "malikasinger1.github.io/angular-todo-app",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
