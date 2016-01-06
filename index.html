@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>Angular todo app</title>
+
+    <link rel="stylesheet" href="bower_components/angular-material/angular-material.css">
+
     <script src="bower_components/angular/angular.js"></script>
     <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
 
@@ -14,7 +17,9 @@
     <script src="views/home/home.js"></script>
 
 </head>
-<body>
+<body ng-app="todoApp">
+
+<div ui-view></div>
 
 </body>
 </html>
