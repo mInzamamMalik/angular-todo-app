@@ -1,15 +1,24 @@
+
+
 <md-content>
+
     <md-input-container>
         <label>write your todo here</label>
         <input type="text" ng-model="newEntry">
     </md-input-container>
-    <button ng-click="add()">add</button>
+
+    <md-button class="md-raised md-primary" ng-click="add()">add</md-button>
+
 </md-content>
 
-
 <div ng-repeat="item in todoList">
-    <md-checkbox ng-check="onCheck()" >
-       {{item.text}}
+
+    <md-checkbox ng-model="item.checked">
+
+        {{item.text}}
+
     </md-checkbox>
+
 </div>
 
+<md-button class="md-raised md-primary" ng-click="archive()">archive</md-button>
