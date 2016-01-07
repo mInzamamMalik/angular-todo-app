@@ -28,14 +28,13 @@ angular.module("todoApp")
     };
 
     $scope.$watch("todoList", function( newValue, oldValue ) {
-            $scope.remaining = 0;
+            $scope.remaining = newValue.length;
             for(i=0; i<newValue.length; i++){
                 if(newValue[i].checked){
-                    $scope.remaining++;
+                    $scope.remaining--;
                 }
             }
-        },
-        true // Object equality (not just reference).
+        },true // Object equality (not just reference).
     );
 
 
