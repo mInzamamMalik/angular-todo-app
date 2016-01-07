@@ -1,7 +1,6 @@
 
 
 <md-content>
-
     <md-input-container>
         <label>write your todo here</label>
         <input type="text" ng-model="newEntry">
@@ -21,4 +20,5 @@
 
 </div>
 
-<md-button class="md-raised md-primary" ng-click="archive()">archive</md-button>
+<md-button class="md-raised md-primary" ng-click="archive()">Archive</md-button>
+{{remaining}} out of {{todoList.length}}
