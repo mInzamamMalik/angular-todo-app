@@ -21,8 +21,8 @@ angular.module("todoApp")
     $scope.archive = function(){
         for(var i=0; i<$scope.todoList.length ; i++){
             if($scope.todoList[i].checked){
-                $scope.todoList.splice(i,1);
-                i--;
+                $scope.todoList.splice(i--,1);
+
             }
         }
     };
