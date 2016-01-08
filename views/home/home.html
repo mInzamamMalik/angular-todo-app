@@ -1,30 +1,32 @@
-<br/>
-<form ng-submit="add()">
-<md-content layout="row" layout-align="center">
-    <md-input-container flex="60">
-        <label>write your todo here</label>
-        <input type="text" ng-model="newEntry">
-    </md-input-container>
+<md-content layout="column" >
 
-    <md-button class="md-fab md-warn" aria-label="Add Entry" type="submit">
-        <md-icon md-svg-icon="icons/ic_add_white_24px.svg"></md-icon>
-    </md-button>
-</md-content>
-</form>
-<md-content  layout="row" layout-align="end"  >
-    <span>{{remaining}} out of {{todoList.length}} remaining [<a href="" ng-click="archive()">Archive</a>]</span>
-    <span flex-offset="10"></span>
-</md-content>
+    <form ng-submit="add()">
+        <md-content layout="row" layout-align="center" layout-padding>
+            <md-input-container flex-gt-xs="70" flex-xs  >
+                <label>write your todo here</label>
+                <input type="text" ng-model="newEntry">
+            </md-input-container>
 
-<div ng-repeat="item in todoList" layout="row" layout-align="start">
-    <span flex-offset="20"></span>
-    <div>
-    <md-checkbox ng-model="item.checked" class="md-warn">
+            <md-button class="md-fab md-warn" aria-label="Add Entry" type="submit">
+                <md-icon md-svg-icon="icons/ic_add_white_24px.svg"></md-icon>
+            </md-button>
+        </md-content>
+    </form>
 
-        {{item.text}}
 
-    </md-checkbox>
+    <md-content layout="row" layout-align="end center" layout-margin="">
+        <span>{{remaining}} out of {{todoList.length}} remaining [<a href="" ng-click="archive()">Archive</a>]</span>
+        <span flex-offset-gt-sm="15"></span>
+    </md-content>
+
+
+    <div ng-repeat="item in todoList" layout="row" layout-align="start center" layout-padding>
+        <span flex-offset-gt-sm="15"></span>
+
+        <md-checkbox ng-model="item.checked" class="md-warn">
+            {{item.text}}
+        </md-checkbox>
+
     </div>
-</div>
 
-<br/>
+</md-content>
