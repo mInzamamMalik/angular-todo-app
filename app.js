@@ -1,4 +1,4 @@
-angular.module("todoApp",["ui.router","ngMaterial","ngMdIcons"])
+angular.module("todoApp",["home","ui.router","ngMaterial","ngMdIcons"])
 
 .config(function($urlRouterProvider , $stateProvider/*, $mdIconProveder*/){
 
