@@ -1,6 +1,8 @@
-angular.module("todoApp",["ui.router","ngMaterial"])
+angular.module("todoApp",["ui.router","ngMaterial","ngMdIcons"])
 
-.config(function($urlRouterProvider , $stateProvider){
+.config(function($urlRouterProvider , $stateProvider/*, $mdIconProveder*/){
+
+    //$mdIconProveder.defaultIconSet("../icons/mdi.svg");
 
     $urlRouterProvider.otherwise("/home");
 

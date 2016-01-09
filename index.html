@@ -4,14 +4,21 @@
     <meta charset="UTF-8">
     <title>Angular todo app</title>
 
-    <link rel="stylesheet" href="bower_components/angular-material/angular-material.css">
+    <!--for angularJs-->
+    <script src="node_modules/angular/angular.js"></script>
 
-    <script src="bower_components/angular/angular.js"></script>
-    <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    <!--for ui.router-->
+    <script src="node_modules/angular-ui-router/release/angular-ui-router.js"></script>
 
-    <script src="bower_components/angular-animate/angular-animate.js"></script>
-    <script src="bower_components/angular-aria/angular-aria.js"></script>
-    <script src="bower_components/angular-material/angular-material.js"></script>
+    <!--angular material-->
+    <link rel="stylesheet" href="node_modules/angular-material/angular-material.css">
+    <script src="node_modules/angular-animate/angular-animate.js"></script>
+    <script src="node_modules/angular-aria/angular-aria.js"></script>
+    <script src="node_modules/angular-material/angular-material.js"></script>
+
+    <!--for material icons-->
+    <script src="node_modules/angular-material-icons/angular-material-icons.js"></script>
+    <link rel="stylesheet" href="node_modules/angular-material-icons/angular-material-icons.css">
 
     <script src="app.js"></script>
     <script src="views/home/home.js"></script>
@@ -21,17 +28,11 @@
 
 <md-toolbar class="md-primary"  >
     <div class="md-toolbar-tools" layout="row" layout-align="center">
-        <!--<md-button class="md-icon-button" aria-label="Settings">
-            <md-icon md-svg-icon="img/icons/menu.svg"></md-icon>
-        </md-button>-->
 
-        <h2  >
             <span class="md-headline"><b>Angular ToDo App</b></span>
-        </h2>
 
     </div>
 </md-toolbar>
-
 
 <div ui-view></div>
 
