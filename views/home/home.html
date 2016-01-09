@@ -2,7 +2,7 @@
 
     <form ng-submit="add()">
         <md-content layout="row" layout-align="center" layout-padding>
-            <md-input-container flex-gt-xs="70" flex-xs  >
+            <md-input-container flex-gt-sm="70" flex-gt-xs="70" flex-xs  >
                 <label>write your todo here</label>
                 <input type="text" ng-model="newEntry">
             </md-input-container>
@@ -16,12 +16,12 @@
 
     <md-content layout="row" layout-align="end center" layout-margin="">
         <span>{{remaining}} out of {{todoList.length}} remaining [<a href="" ng-click="archive()">Archive</a>]</span>
-        <span flex-offset-gt-sm="15"></span>
+        <span flex-offset-gt-sm="15" flex-offset-gt-xs="15" flex-offset-xs></span>
     </md-content>
 
 
     <div ng-repeat="item in todoList" layout="row" layout-align="start center" layout-padding>
-        <span flex-offset-gt-sm="15"></span>
+        <span flex-offset-gt-sm="15" flex-offset-gt-xs="15" flex-offset-xs ></span>
 
         <md-checkbox ng-model="item.checked" class="md-warn">
             {{item.text}}
