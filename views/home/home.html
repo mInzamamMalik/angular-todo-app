@@ -18,7 +18,7 @@
     </md-content>
 
 
-    <div ng-repeat="item in todoList" layout="row" layout-align="start center" layout-padding>
+    <div ng-repeat="item in todoList | orderBy: '$index':true" layout="row" layout-align="start center" layout-padding>
 
         <span flex-offset-gt-sm="15" flex-offset-gt-xs="15" flex-offset-xs ></span>
 
