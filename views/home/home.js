@@ -17,18 +17,14 @@
                 }
             };
 
-            $scope.archive = function () {
-                angular.forEach($scope.todoList, function(item , key ,obj){
-                    console.log(key , item);
-                    if (item.checked) {
-                        console.log(key);
-                        obj.splice(key--, 1);
-                        console.log(key);
-                    }
+    $scope.archive = function(){
+        for(var i=0; i<$scope.todoList.length ; i++){
+            if($scope.todoList[i].checked){
+                $scope.todoList.splice(i--,1);
 
-                }) ;
-
-            };
+            }
+        }
+    };
 
             $scope.$watch("todoList", function (newValue, oldValue) {
                     $scope.remaining = newValue.length;
