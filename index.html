@@ -26,15 +26,44 @@
 </head>
 <body ng-app="todoApp">
 
-<md-toolbar class="md-primary"  >
-    <div class="md-toolbar-tools" layout="row" layout-align="center">
 
-            <span class="md-headline"><b>Angular ToDo App</b></span>
+<!--//fb sdk code start///////////////////////////-->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.5&appId=923667797705278";
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<!--////fb sdk code end////////////////////////////-->
 
-    </div>
-</md-toolbar>
 
-<div ui-view></div>
+
+
+
+
+    <md-toolbar class="md-primary"  >
+            <div class="md-toolbar-tools" layout="row" layout-align="center">
+
+                    <span class="md-headline"><b>Angular ToDo App</b></span>
+
+                </div>
+    </md-toolbar>
+
+    <div ui-view></div>
 
 </body>
+
+
+<!--///////fb like button code start/////////-->
+<div align="left">
+    <div  class="fb-like"
+          data-href="https://www.facebook.com/MInzamamMalik"
+          data-layout="standard"
+          data-action="like"
+          data-show-faces="true"
+          data-share="true"></div>
+    <!--///////fb like button code start/////////-->
+
 </html>
